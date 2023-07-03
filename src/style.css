@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.main {
+		@apply flex grow items-center justify-center h-screen text-center;
+	}
+
+	.dropzone-container {
+		@apply p-16 bg-[#f7fafc] border border-solid border-[#e2e8f0];
+	}
+
+	.hidden-input {
+		@apply opacity-0 overflow-hidden absolute w-1 h-2;
+	}
+
+	.file-label {
+		@apply text-xl block cursor-pointer;
+	}
+
+	.preview-container {
+		@apply flex mt-8;
+	}
+
+	.preview-card {
+		@apply flex border border-solid border-[#a2a2a2] p-2 ml-2;
+	}
+
+	.preview-img {
+		@apply w-14 h-14 rounded-md border border-solid border-[#a2a2a2] bg-[#a2a2a2];
+	}
+}
