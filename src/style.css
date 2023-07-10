@@ -2,9 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+
+	ul {
+		list-style: none;
+	}
+}
+
 @layer components {
 	.main {
-		@apply flex grow items-center justify-center h-screen text-center;
+		@apply flex flex-col grow items-center justify-center h-screen text-center;
 	}
 
 	.dropzone-container {
